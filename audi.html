@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Audi RS 7 от ABT почти сравнялся по мощности с Bugatti Veyron</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a class="logo_block" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    <h1 class="title">Fifth Wheel</h1>
+    <h3 class="hi_txt">Сайт для тех, у кого вместо сердца - турбина, а вместо крови - антифриз.</h3>
+</header>
+<main>
+    <section class="section">
+        <h2 class="title_text">Audi RS 7 от ABT почти сравнялся по мощности с Bugatti Veyron</h2>
+        <p class="text">Ателье ABT Sportsline представило новую модификацию лифтбека Audi RS 7, созданную, как
+            утверждается, по спецзаказу берлинского подразделения Audi. Она пополнила собой серию Legacy Edition, но
+            автомобиль выпущен в единственном экземпляре и носит название Thunder 1 of 1. Основное отличие проекта —
+            высокофорсированный 4,0-литровый V8, который уступает по мощности двигателю Bugatti Veyron всего одну
+            лошадиную силу.</p>
+        <img class="img" src="img/Audi.png" alt="Audi">
+        <p class="text">В детали перестройки двигателя ателье не вдаётся, опубликовав лишь основные характеристики —
+            1000 л.с. и 1150 Нм. Мотор стандартного Audi RS 7 развивает до 630 л.с. и 850 Нм, что позволяет пятидверке
+            ускоряться до 100 км/ч за 3,4 секунды. Вероятнее всего, Thunder от ABT потратит на это же упражнение менее 3
+            секунд.</p>
+        <img class="img" src="img/Audi1.png" alt="Audi1">
+        <p class="text">Тюнинг-проекты ABT Sportsline, как правило, отличаются сдержанностью, поэтому Thunder 1 of 1
+            выглядит необычно ярким. Лифтбек не только окрасили в оригинальный оттенок синего, но и оформили карбоновые
+            детали подкапотного пространства в тёмно-красный. Кузову RS 7 оптимизировали аэродинамику при помощи лёгкого
+            углепластикового обвеса, украшенного оранжевыми акцентами — в цвет тормозных суппортов и основного тона
+            отделки интерьера. Наконец, на потолке салона лифтбека появилось диодное «звёздное небо».</p>
+        <img class="img" src="img/Audi2.png" alt="Audi2">
+    </section>
+    <nav>
+        <ul>
+            <li class="nav_ref_btn"><a class="nav_ref" href="index.html">Главная</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="about.html">О сайте</a></li>
+        </ul>
+        <div class="slider_btn_case">
+            <button class="slider_btn" id="slider_btn"
+                    aria-expanded="false"><img class="slider_btn_img" src="img/arrow.svg" alt="arrow"></button>
+            <p class="slider_text">Новости</p></div>
+        <ul class="slide" id="slide">
+            <li class="nav_ref_btn"><a class="nav_ref" href="jeep_new.html">Jeep Cherokee стал более внедорожным</a>
+            </li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="bmw_new.html">Представлен новый BMW 3-й
+                серии</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="mb_new.html">Электрический Гелендваген стал
+                дальнобойнее</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="audi.html">Audi RS 7 сравнялся с Bugatti Veyron</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+<footer>
+    <small>&copy; Немцов А.В. 3524Б1ПИ2</small>
+</footer>
+</body>
+<script>
+    btn = document.getElementById('slider_btn')
+    slider = document.getElementById('slide')
+    btn.addEventListener('click', function () {
+        flag = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!flag));
+        slider.classList.toggle('active');
+    })
+</script>
+</html>

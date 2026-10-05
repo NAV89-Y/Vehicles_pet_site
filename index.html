@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Fifth wheel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a class="logo_block" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    <h1 class="title">Fifth Wheel</h1>
+    <h3 class="hi_txt">Сайт для тех, у кого вместо сердца - турбина, а вместо крови - антифриз.</h3>
+</header>
+<main>
+    <section class="information">
+        <p class="information_text"><b>Fifth Wheel</b> - честные обзоры автомобилей: тест-драйвы, сравнения, надёжность,
+            стоимость владения и типичные
+            болячки.<br>Без рекламной шелухи и сказок из пресс-релизов.</p>
+    </section>
+    <section class="content">
+        <h2 class="news_title">Последние новости</h2>
+        <a class="news_ref"
+           href="jeep_new.html">Jeep
+            Cherokee стал более внедорожным с «понижайкой» и увеличенным клиренсом<img class="news_img"
+                                                                                       src="img/Jeep.png"
+                                                                                       alt="Jeep"></a>
+        <a class="news_ref"
+           href="bmw_new.html">Внешность
+            электрокара и 4,1 секунды до сотни: представлен новый BMW 3-й серии<img class="news_img"
+                                                                                    src="img/BMW.png"
+                                                                                    alt="BMW">
+        </a>
+        <a class="news_ref"
+           href="mb_new.html">Электрический
+            Гелендваген стал дальнобойнее с той же батареей<img class="news_img"
+                                                                src="img/MB.png"
+                                                                alt="MB_G">
+        </a>
+        <a class="news_ref"
+           href="audi.html">Audi
+            RS 7 от ABT почти сравнялся по мощности с Bugatti Veyron<img class="news_img"
+                                                                         src="img/Audi.png"
+                                                                         alt="AUDI"></a>
+    </section>
+    <nav>
+        <ul>
+            <li class="nav_ref_btn"><a class="nav_ref" href="index.html">Главная</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="about.html">О сайте</a></li>
+        </ul>
+        <div class="slider_btn_case">
+            <button class="slider_btn" id="slider_btn"
+                    aria-expanded="false"><img class="slider_btn_img" src="img/arrow.svg" alt="arrow"></button>
+            <p class="slider_text">Новости</p></div>
+        <ul class="slide" id="slide">
+            <li class="nav_ref_btn"><a class="nav_ref" href="jeep_new.html">Jeep Cherokee стал более внедорожным</a>
+            </li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="bmw_new.html">Представлен новый BMW 3-й
+                серии</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="mb_new.html">Электрический Гелендваген стал
+                дальнобойнее</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="audi.html">Audi RS 7 сравнялся с Bugatti Veyron</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+<footer>
+    <small>&copy; Немцов А.В. 3524Б1ПИ2</small>
+</footer>
+</body>
+<script>
+    btn = document.getElementById('slider_btn')
+    slider = document.getElementById('slide')
+    btn.addEventListener('click', function () {
+        flag = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!flag));
+        slider.classList.toggle('active');
+    })
+</script>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Jeep Cherokee стал более внедорожным с «понижайкой» и увеличенным клиренсом</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a class="logo_block" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    <h1 class="title">Fifth Wheel</h1>
+    <h3 class="hi_txt">Сайт для тех, у кого вместо сердца - турбина, а вместо крови - антифриз.</h3>
+</header>
+<main>
+    <section class="section">
+        <h2 class="title_text">Jeep Cherokee стал более внедорожным с «понижайкой» и увеличенным клиренсом</h2>
+        <p class="text">Компания Jeep расширила семейство Cherokee за счёт новой модификации Trailhawk, лучше подготовленной к
+            бездорожью, чем обычные кроссоверы. Такой Cherokee будет отличаться не только внешними деталями, но и
+            конструктивом, так как, к примеру, получил новую систему полного привода с понижающим рядом. Производство
+            Cherokee Trailhawk запустят в конце текущего года, заказы принимаются по цене от 44 625 долларов.</p>
+        <img class="img" src="img/Jeep.png" alt="Jeep">
+        <p class="text">Jeep Cherokee Trailhawk получил новые бамперы с оптимизированной геометрией и перенастроенную подвеску с
+            увеличением дорожного просвета на 25 миллиметров (до 230 миллиметров). В совокупности эти доработки привели
+            к заметному улучшению углов въезда и съезда: первый увеличился с 19,6 до 28,8 градуса, второй — с 29,4 до
+            31,8 градуса. Кроме того, кроссовер укомплектовали оригинальными амортизаторами и пружинами.</p>
+        <img class="img" src="img/Jeep1.png" alt="Jeep1">
+        <p class="text">Среди прочих доработок компания упоминает 17-дюймовые диски с вседорожными покрышками, буксировочные
+            проушины, предотвращающую блики наклейку на капоте, а также несколько защитных пластин для днища. Cherokee
+            Trailhawk может преодолевать броды глубиной до 610 миллиметров.</p>
+        <img class="img" src="img/Jeep2.png" alt="Jeep2">
+        <p class="text">В качестве силового агрегата задействована гибридная система на базе 1,6-литровой «турбочетвёрки», которая
+            развивает 213 л.с. и 312 Нм. Также предусмотрены система полного привода Jeep Active Drive II (наличие
+            раздаточной коробки в Jeep называют уникальным для сегмента), блокировка заднего дифференциала и три
+            внедорожных режима работы ездовой электроники.<br>Более крупный Jeep Grand Cherokee в скором времени должен
+            обзавестись исполнением с самым мощным мотором, однако инсайдеры уверяют, что в линейку двигателей этой
+            модели не вернётся V8. Вместо него решено задействовать «турбошестёрку» из семейства Hurricane.</p>
+    </section>
+    <nav>
+        <ul>
+            <li class="nav_ref_btn"><a class="nav_ref" href="index.html">Главная</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="about.html">О сайте</a></li>
+        </ul>
+        <div class="slider_btn_case">
+            <button class="slider_btn" id="slider_btn"
+                    aria-expanded="false"><img class="slider_btn_img" src="img/arrow.svg" alt="arrow"></button>
+            <p class="slider_text">Новости</p></div>
+        <ul class="slide" id="slide">
+            <li class="nav_ref_btn"><a class="nav_ref" href="jeep_new.html">Jeep Cherokee стал более внедорожным</a>
+            </li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="bmw_new.html">Представлен новый BMW 3-й
+                серии</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="mb_new.html">Электрический Гелендваген стал
+                дальнобойнее</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="audi.html">Audi RS 7 сравнялся с Bugatti Veyron</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+<footer>
+    <small>&copy; Немцов А.В. 3524Б1ПИ2</small>
+</footer>
+</body>
+<script>
+    btn = document.getElementById('slider_btn')
+    slider = document.getElementById('slide')
+    btn.addEventListener('click', function () {
+        flag = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!flag));
+        slider.classList.toggle('active');
+    })
+</script>
+</html>

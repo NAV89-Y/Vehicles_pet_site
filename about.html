@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О сайте</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a class="logo_block" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    <h1 class="title">Fifth Wheel</h1>
+    <h3 class="hi_txt">Сайт для тех, у кого вместо сердца - турбина, а вместо крови - антифриз.</h3>
+</header>
+<main>
+    <section class="section">
+        <h2 class="title_text">О сайте</h2>
+        <div class="text">
+            <b>Fifth Weel</b> - сайт новостей об автомобилях и автоиндустрии.<br>Мы следим за мировыми премьерами,
+            рестайлингами,
+            новыми поколениями и концептами - от бюджетных моделей до гиперкаров и электромобилей.<br>Рассказываем, что
+            реально изменилось в машине, какие технологии пришли в серию, когда новинка доедет до
+            рынка и сколько будет стоить.<br>Отдельно разбираем тренды индустрии: электрификацию, автопилоты, новые
+            платформы и двигатели.<br>Никаких переписанных пресс-релизов и кликбейта.<br>Только факты, фото,
+            характеристики и понятный разбор - что
+            это значит для обычного водителя.
+        </div>
+        <img class="img" src="img/vehicles.png" alt="vehicles">
+        <h3 class="title">Что публикуем</h3>
+        <ol>
+            <li class="text"><u>Новинки и премьеры</u><p>Свежие мировые премьеры, новые поколения и рестайлинги: что показали, чем
+                отличается от прежней версии и когда ждать у дилеров.</p></li>
+            <li class="text"><u>Новости по типам авто</u><p>Всё по категориям: электромобили, гибриды, кроссоверы, седаны, спорткары и
+                бюджетные модели - с характеристиками и фото.</p></li>
+            <li class="text"><u>Технологии и индустрия</u><p>Новые платформы, двигатели, батареи и автопилоты, а также тренды отрасли:
+                электрификация, эконормы и запреты на ДВС.</p></li>
+            <li class="text"><u>Цены и рынок</u><p>Стартовые цены, комплектации, сроки выхода на рынок и то, как меняется стоимость новых и
+                б/у машин.</p></li>
+            <li class="text"><u>Разборы и мнения</u><p>Короткие выводы по каждой новинке: стоит ли ждать новое поколение, брать текущее или
+                смотреть на конкурентов.</p></li>
+        </ol>
+    </section>
+    <nav>
+        <ul>
+            <li class="nav_ref_btn"><a class="nav_ref" href="index.html">Главная</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="about.html">О сайте</a></li>
+        </ul>
+        <div class="slider_btn_case">
+            <button class="slider_btn" id="slider_btn"
+                    aria-expanded="false"><img class="slider_btn_img" src="img/arrow.svg" alt="arrow"></button>
+            <p class="slider_text">Новости</p></div>
+        <ul class="slide" id="slide">
+            <li class="nav_ref_btn"><a class="nav_ref" href="jeep_new.html">Jeep Cherokee стал более внедорожным</a>
+            </li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="bmw_new.html">Представлен новый BMW 3-й
+                серии</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="mb_new.html">Электрический Гелендваген стал
+                дальнобойнее</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="audi.html">Audi RS 7 сравнялся с Bugatti Veyron</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+<footer>
+    <small>&copy; Немцов А.В. 3524Б1ПИ2</small>
+</footer>
+</body>
+<script>
+    btn = document.getElementById('slider_btn')
+    slider = document.getElementById('slide')
+    btn.addEventListener('click', function () {
+        flag = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!flag));
+        slider.classList.toggle('active');
+    })
+</script>
+</html>

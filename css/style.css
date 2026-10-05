@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    background: #E2F7DF;
+}
+
+header {
+    display: flex;
+    background: #6AC883;
+    margin: 0 0 0.5rem;
+    padding: 0.5rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #36904E;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.logo {
+    width: 8rem;
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    color: #0f4f20;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.hi_txt {
+    margin: auto;
+    color: #0f4f20;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.information {
+    margin: 0.5rem 0.5rem;
+    padding: 0.6rem 0.6rem;
+    width: 20%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #83C895;
+    border-radius: 1rem;
+    background: #aee5b4;
+}
+
+.information_text {
+    margin: 0;
+    text-align: justify;
+    text-indent: 1rem;
+    color: #0f4f20;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.content {
+    width: 60%;
+    margin: 0.5rem 0.5rem;
+}
+
+.news_title {
+    margin: 0 0 1rem;
+    text-align: center;
+    color: #0f4f20;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+/*задать разным вариациям ссылки параметры*/
+.news_ref,
+.news_ref:link,
+.news_ref:visited {
+    display: flex;
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-direction: column;
+    text-decoration: none;
+    text-indent: 1rem;
+    text-align: center;
+    color: #36904E;
+}
+
+.news_ref:hover {
+    color: #0f4f20;
+}
+
+.news_img {
+    width: 100%;
+    margin: 0.7rem 0;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+nav {
+    width: 20%;
+    height: auto;
+    margin: 0.5rem 0.5rem;
+    padding: 0.6rem 0.6rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #83C895;
+    border-radius: 1rem;
+    background: #aee5b4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_ref_btn {
+    display: flex;
+    justify-content: center;
+    background-color: #83C895;
+    border-color: #36904E;
+    border-style: solid;
+    border-radius: 1rem;
+    padding: 0.5rem 0.4rem;
+    margin: 0.3rem 0;
+}
+
+.nav_ref,
+.nav_ref:link,
+.nav_ref:visited {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    color: #0f4f20;
+}
+
+/*менять цвет кнопки при наведении*/
+.nav_ref_btn:hover {
+    background-color: #0f4f20;
+    border-color: #83C895;
+}
+
+/*вместе с цветом кнопки менять и цвет текста*/
+.nav_ref_btn:hover .nav_ref {
+    color: #83C895;
+}
+
+.slider_btn_case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 0.7rem auto 0.4rem;
+    font-weight: bold;
+    color: #0f4f20;
+}
+
+.slider_btn {
+    border: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    margin: 0 0.1rem 0 0;
+}
+
+.slider_btn_img {
+    width: 100%;
+    rotate: -90deg;
+    transition: rotate 0.5s ease;
+}
+
+.slider_btn[aria-expanded="true"] .slider_btn_img {
+    rotate: 0deg;
+}
+
+.slider_text {
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.slide {
+    display: none;
+}
+
+.slide.active {
+    display: block;
+    animation: anim 0.5s ease;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+        transform: translateY(-0.5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    display: flex;
+    background: #6AC883;
+    padding: 0 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #36904E;
+    border-radius: 0.7rem 0.7rem 0 0;
+
+}
+
+small {
+    font-weight: bold;
+    padding: 0.3rem;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #0f4f20;
+}
+
+ol {
+    padding-left: 1rem;
+}
+
+.section {
+    width: 80%;
+    padding: 0.5rem 1rem;
+}
+
+.title_text {
+    margin: 1rem;
+    text-align: center;
+    text-indent: 1rem;
+    color: #0f4f20;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.text {
+    margin: 0;
+    text-align: justify;
+    text-indent: 1rem;
+    color: #0f4f20;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+.img {
+    width: 100%;
+    margin: 0.7rem 0;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+/*Мобильное оформление*/
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo_block {
+        align-self: center;
+    }
+
+    .hi_txt {
+        text-align: center;
+    }
+
+    nav {
+        order: 0;
+        width: 90%;
+
+    }
+
+    .information {
+        order: 1;
+        width: 90%;
+    }
+
+    .content, .section {
+        order: 2;
+        width: 90%;
+    }
+}

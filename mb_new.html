@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Электрический Гелендваген стал дальнобойнее с той же батареей</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <a class="logo_block" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+    <h1 class="title">Fifth Wheel</h1>
+    <h3 class="hi_txt">Сайт для тех, у кого вместо сердца - турбина, а вместо крови - антифриз.</h3>
+</header>
+<main>
+    <section class="section">
+        <h2 class="title_text">Электрический Гелендваген стал дальнобойнее с той же батареей</h2>
+        <p class="text">Компания Mercedes-Benz обновила электрическую версию внедорожника G-класса в преддверии 2027
+            модельного года. Гелендвагену улучшили запас хода и скорость зарядки, при этом тяговая батарея осталась
+            прежней. Пока обновления анонсированы только для рынка США, где G 580 подорожал на 650 долларов — до 163 750
+            долларов. Получит ли аналогичные усовершенствования европейская версия, не уточняется.</p>
+        <img class="news_img" src="img/MB.png" alt="MB">
+        <p class="text">Модернизированный Mercedes-Benz G 580 теперь проезжает без подзарядки 401 километр по
+            национальному циклу измерений EPA вместо прежних 385 километров. Улучшения, как утверждается, удалось
+            добиться за счёт оптимизации программного обеспечения и периферийной электроники, так как полезная ёмкость
+            тягового аккумулятора составляет прежние 117 кВт⋅ч.</p>
+        <p class="text">Для европейской версии внедорожника с теми же батареей и 587-сильной связкой моторов компания
+            заявляет пробег до 479 километров. Расхождение объясняется применением иного цикла измерений, WLTP.</p>
+        <p class="text">Ещё одна доработка электрокара для американского рынка — появление нового зарядного разъёма.
+            Внедорожнику добавили порт стандарта NACS, что открывает ему доступ на мощные зарядные станции Tesla
+            Supercharger (ранее для этого приходилось отдельно приобретать адаптер). Как следствие, перезарядить батарею
+            G 580 в Штатах с 10 до 80% можно будет за 29 минут вместо прежних 32.</p>
+    </section>
+    <nav>
+        <ul>
+            <li class="nav_ref_btn"><a class="nav_ref" href="index.html">Главная</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="about.html">О сайте</a></li>
+        </ul>
+        <div class="slider_btn_case">
+            <button class="slider_btn" id="slider_btn"
+                    aria-expanded="false"><img class="slider_btn_img" src="img/arrow.svg" alt="arrow"></button>
+            <p class="slider_text">Новости</p></div>
+        <ul class="slide" id="slide">
+            <li class="nav_ref_btn"><a class="nav_ref" href="jeep_new.html">Jeep Cherokee стал более внедорожным</a>
+            </li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="bmw_new.html">Представлен новый BMW 3-й
+                серии</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="mb_new.html">Электрический Гелендваген стал
+                дальнобойнее</a></li>
+            <li class="nav_ref_btn"><a class="nav_ref" href="audi.html">Audi RS 7 сравнялся с Bugatti Veyron</a>
+            </li>
+        </ul>
+    </nav>
+</main>
+<footer>
+    <small>&copy; Немцов А.В. 3524Б1ПИ2</small>
+</footer>
+</body>
+<script>
+    btn = document.getElementById('slider_btn')
+    slider = document.getElementById('slide')
+    btn.addEventListener('click', function () {
+        flag = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!flag));
+        slider.classList.toggle('active');
+    })
+</script>
+</html>
