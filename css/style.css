@@ -245,7 +245,57 @@ ol {
     color: #0f4f20;
     font-family: Tahoma, Geneva, sans-serif;
 }
+.feedback_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
 
+}
+.feedback_massage{
+    font-family: Tahoma, Geneva, sans-serif;
+    background: #aee5b4;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #83C895;
+    border-radius: 1rem;
+    width: 80%;
+    margin: 0;
+    padding: 0.5rem 0.5rem;
+}
+
+.feedback_check_block{
+    display: flex;
+    padding: 1rem 1rem;
+}
+.out_massage{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #0f4f20;
+    margin: 0 0.5rem;
+}
+.feedback_check{
+    pointer-events: none;
+    margin: 0;
+    accent-color: #83C895;
+    border-color: #83C895;
+}
+.feedback_button{
+    width: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1rem 1rem;
+    font-family: Tahoma, Geneva, sans-serif;
+    padding: 0.5rem;
+    color: #0f4f20;
+    background-color: #83C895;
+    border-color: #36904E;
+}
+.feedback_button:hover {
+    background-color: #0f4f20;
+    border-color: #83C895;
+    color: #83C895;
+}
 .img {
     width: 100%;
     margin: 0.7rem 0;

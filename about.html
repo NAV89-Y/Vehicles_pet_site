@@ -27,17 +27,29 @@
         <img class="img" src="img/vehicles.png" alt="vehicles">
         <h3 class="title">Что публикуем</h3>
         <ol>
-            <li class="text"><u>Новинки и премьеры</u><p>Свежие мировые премьеры, новые поколения и рестайлинги: что показали, чем
-                отличается от прежней версии и когда ждать у дилеров.</p></li>
-            <li class="text"><u>Новости по типам авто</u><p>Всё по категориям: электромобили, гибриды, кроссоверы, седаны, спорткары и
-                бюджетные модели - с характеристиками и фото.</p></li>
-            <li class="text"><u>Технологии и индустрия</u><p>Новые платформы, двигатели, батареи и автопилоты, а также тренды отрасли:
-                электрификация, эконормы и запреты на ДВС.</p></li>
-            <li class="text"><u>Цены и рынок</u><p>Стартовые цены, комплектации, сроки выхода на рынок и то, как меняется стоимость новых и
-                б/у машин.</p></li>
-            <li class="text"><u>Разборы и мнения</u><p>Короткие выводы по каждой новинке: стоит ли ждать новое поколение, брать текущее или
-                смотреть на конкурентов.</p></li>
+            <li class="text"><u>Новинки и премьеры</u>
+                <p>Свежие мировые премьеры, новые поколения и рестайлинги: что показали, чем
+                    отличается от прежней версии и когда ждать у дилеров.</p></li>
+            <li class="text"><u>Новости по типам авто</u>
+                <p>Всё по категориям: электромобили, гибриды, кроссоверы, седаны, спорткары и
+                    бюджетные модели - с характеристиками и фото.</p></li>
+            <li class="text"><u>Технологии и индустрия</u>
+                <p>Новые платформы, двигатели, батареи и автопилоты, а также тренды отрасли:
+                    электрификация, эконормы и запреты на ДВС.</p></li>
+            <li class="text"><u>Цены и рынок</u>
+                <p>Стартовые цены, комплектации, сроки выхода на рынок и то, как меняется стоимость новых и
+                    б/у машин.</p></li>
+            <li class="text"><u>Разборы и мнения</u>
+                <p>Короткие выводы по каждой новинке: стоит ли ждать новое поколение, брать текущее или
+                    смотреть на конкурентов.</p></li>
         </ol>
+        <section class="feedback_block">
+            <p class="title_text"><b>Оставьте обратную связь</b></p>
+            <textarea class="feedback_massage" id="feedback_massage" placeholder="Обратная связь"></textarea>
+            <div class="feedback_check_block"><input class="feedback_check" id="feedback_check" type="checkbox">
+                <p class="out_massage" id="out_massage">Обратная связь не отправлена</p></div>
+            <button class="feedback_button" id="feedback_button"><b>Отправить обратную связь</b></button>
+        </section>
     </section>
     <nav>
         <ul>
@@ -72,5 +84,21 @@
         btn.setAttribute('aria-expanded', String(!flag));
         slider.classList.toggle('active');
     })
+
+    feedbtn = document.getElementById('feedback_button')
+    feedbtn.addEventListener('click', function () {
+        ok = confirm("Вы уверены, что хотите оставить отзыв?\n(Нет - сбросить форму)")
+        massage = document.getElementById('feedback_massage');
+        if (ok && massage.value !== ""){
+            document.getElementById('feedback_check').checked = true;
+            document.getElementById('out_massage').textContent = "Обратная связь отправлена";
+            console.log(massage.value);
+        }
+        else{
+            document.getElementById('feedback_check').checked = false;
+            document.getElementById('out_massage').textContent = "Обратная связь не отправлена";
+            massage.value = "";
+        }
+    });
 </script>
 </html>
